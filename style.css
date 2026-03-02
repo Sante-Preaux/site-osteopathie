@@ -8,3 +8,63 @@ nav a { margin-left: 20px; text-decoration: none; color: #003049 }
 .section { padding: 60px 20px; text-align: center }
 .contact { background: #f2f7fb }
 footer { text-align: center; padding: 20px; background: #003049; color: white }
+/* ============================= */
+/* RESPONSIVE MOBILE OPTIMISATION */
+/* ============================= */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Empêche les débordements horizontaux */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Images toujours adaptatives */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* -------- VERSION MOBILE -------- */
+@media (max-width: 768px) {
+
+    /* Header passe en colonne */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Hero adapté petit écran */
+    .hero {
+        height: 60vh;
+    }
+
+    .overlay {
+        width: 90%;
+        padding: 15px;
+    }
+
+    /* Sections plus compactes */
+    .section {
+        padding: 40px 15px;
+    }
+
+    /* Boutons plus larges au tactile */
+    .btn, .cta {
+        display: inline-block;
+        padding: 12px 20px;
+    }
+}
